@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-local Players = game:GetService("Players")
-
-
-workspace.Baseplate.Touched:Connect(function(hit)
-    -- Ancestor == Parent
-    local playerChar = hit:FindFirstAncestorOfClass("Model")
-    local player = Players:GetPlayerFromCharacter(playerChar)
-
-    if not player then return end
-
-    -- the rest of your code goes here...
-end)
-=======
 local Players = game:GetService("Players")
 
 
@@ -30,4 +16,3 @@ workspace.Baseplate.Touched:Connect(function(hit)
 
     -- the rest of your code goes here...
 end)
->>>>>>> 5d64618f9d822010101dbaf495577a3c2b09cbeb
