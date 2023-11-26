@@ -8,7 +8,7 @@ local function onPlayerRemoving(player)
 	local playerKey = player.UserId
 	local playerData = {}
 
-	for _, stat in ipairs(player.leaderstats:GetChildren()) do
+	for _, stat in player.leaderstats:GetChildren() do
 		playerData[stat.Name] = stat.Value
 	end
 
@@ -26,7 +26,7 @@ local function onPlayerRemoving(player)
 	datastore:UpdateAsync(playerKey, function(oldPlayerData)
 		local playerData = {}
 
-		for _, stat in ipairs(player.leaderstats:GetChildren()) do
+		for _, stat in player.leaderstats:GetChildren() do
 			playerData[stat.Name] = stat.Value
 		end
 
